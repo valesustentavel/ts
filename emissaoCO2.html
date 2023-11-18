@@ -1,0 +1,345 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissão de CO2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-
+        MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="text/css" rel="stylesheet" href="CO2.css" />
+    <link rel="icon" href="img/logovalepreto.png">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['geochart'],
+        });
+        google.charts.setOnLoadCallback(drawRegionsMap);
+
+        function drawRegionsMap() {
+            var data = google.visualization.arrayToDataTable([
+                ['Country', 'Emissão'],
+                ['China', 700],
+                ['Germany', 550],
+                ['United States', 600],
+                ['Brazil', 350],
+                ['Australia', 350],
+                ['Malaysia', 350],
+                ['South Africa', 450],
+                ['Canada', 400],
+                ['Japan', 400],
+                ['Indonesia', 400],
+                ['Thailand', 400],
+                ['United Kingdom', 400],
+                ['Argentina', 450],
+                ['Saudi Arabia', 550],
+                ['Iran', 550],
+                ['France', 300],
+                ['Turkey', 300],
+                ['Kazakhstan', 350],
+                ['India', 600],
+                ['Russia', 550],
+                ['Venezuela', 550],
+                ['Italy', 100],
+                ['Spain', 200],
+                ['Algeria', 200],
+                ['Poland', 200],
+                ['Nigeria', 300],
+                ['Egypt', 200]
+            ]);
+
+            var options = {
+                colorAxis: { colors: ['#940000'] },
+                datalessRegionColor: '#ffeeee'
+            };
+
+            var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="img/valesus3.png" class="imagem-cab"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="emissaoCO2.html" class="nav-link" style="color: #cf4747;">Emissão de
+                            CO2</a></li>
+                    <li class="nav-item"><a href="lixo.html" class="nav-link">Descarte de Lixo</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="emissaoCO2.html" class="nav-link" style="color: #cf4747;">Emissão de
+                        CO2</a></li>
+                <li class="nav-item"><a href="lixo.html" class="nav-link">Descarte de Lixo</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="margin: 15vh; margin-top: 2vh;">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/china.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>CHINA</h5>
+                        <p>Atualmente, o ranking de maiores emissores de CO2 é liderado pela China.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/qatar3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>QATAR</h5>
+                        <p>Quando falamos de emissão per capita, o Qatar se destaca na primeira posição. Isso acontece
+                            por causa da densidade populacional. O Qatar é um país que tem pouca população, mas emite
+                            muito CO2, fazendo com que a sua média per capita aumente considerávelmente.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/amazonia.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>FLORESTA AMAZÔNICA</h5>
+                        <p>Você sabia que a Floresta Amazônica é considerada o "pulmão da Terra"? Ela é responsável pela
+                            maior parte da transformação de CO2 em O2 na atmosfera, sendo um verdadeiro "pulmão".
+                            Portanto, temos o privilégio de dizer que o "pulmão da Terra" está majoritariamente
+                            localizado em nosso país.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/cristo.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>CRISTO REDENTOR</h5>
+                        <p>Você sabia que a Floresta Amazônica é considerada o "pulmão da Terra"? Ela é responsável pela
+                            maior parte da transformação de CO2 em O2 na atmosfera, sendo um verdadeiro "pulmão".
+                            Portanto, temos o privilégio de dizer que o "pulmão da Terra" está majoritariamente
+                            localizado em nosso país.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev" style="background: transparent; border: none;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next" style="background: transparent; border: none;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <div id="container">
+
+        <div id="texto1">
+            <h3>CONHEÇA OS PAÍSES QUE MAIS EMITEM CO2 NA ATMOSFERA</h3>
+            <p>Atualmente, a China é a maior emissora de CO₂ no mundo e representa mais de 25% das emissões globais. Em
+                seguida, temos os EUA (15%), a UE-27 e o Reino Unido (10%), a Índia (7%) e a Rússia (5%). Cerca de 86%
+                das emissões de dióxido de carbono do mundo vêm da queima de combustíveis fósseis para a produção de
+                energia e materiais. As primeiras eras da industrialização foram dominadas pela queima de carvão
+                vegetal. Só no final do século 19 começam a aumentar as emissões por petróleo e gás natural. E, no final
+                do século 20, as emissões pela produção de cimento e pela chama — um dispositivo de combustão de gases
+                inflamáveis usado na indústria, se tornam mais significativas.</p>
+            <p>Desde que começaram os registros, em 1990, o setor de energia – incluindo geração de eletricidade e
+                calor, bem como usos finais em edifícios, transporte e fabricação e construção – permanece como o maior
+                contribuinte para as emissões de GEE, acima de qualquer outro setor, representando 76% das emissões
+                globais em 2019. Embora, no total, os maiores emissores tenham aumentado suas emissões em 56,6% desde
+                1990, Estados Unidos, União Europeia, Rússia e Japão já atingiram o pico em per capita desde então. </p>
+            <p>Dados mais recentes do <a href="https://www.globalcarbonproject.org"> Carbon Project</a>, que cobre as
+                emissões de dióxido de carbono relacionadas à
+                energia, mostram que o crescimento das emissões desacelerou globalmente desde 2013, aumentando em média
+                0,8% ao ano, em comparação a uma média de 1,7% desde 1990. Essa desaceleração aconteceu mesmo com a
+                economia global crescendo no mesmo período. Pelo menos 21 países já estão provando que é possível
+                <a
+                    href="https://www.wri.org/insights/turning-point-which-countries-ghg-emissions-have-peaked-which-will-future">dissociar
+                    emissões e crescimento econômico</a>. Em 2020, as emissões globais diminuíram 4,9% como resultado
+                da pandemia de Covid-19, tornando-se a maior queda de emissões desde 1960 (primeiro ano com dados
+                disponíveis para esta fonte). Em 2021, no entanto, as emissões voltaram a crescer rapidamente, atingindo
+                um aumento de 0,1% em relação aos valores de 2019, mostrando que as emissões ainda estão em tendência
+                ascendente, ilustrando a necessidade de intensificar as ações climáticas para ver uma dissociação entre
+                crescimento econômico e emissões de carbono.
+            </p>
+            <h3>EMISSÕES ANUAIS DE CO2 POR PAÍS</h3>
+            <div class="centro">
+                <div id="regions_div" style="width: 900px; height: 500px;"></div>
+            </div>
+
+
+
+
+
+        </div>
+        <div id="imagem-mapa2">
+            <img src="img/mapaCO2percapta.png" id="imagem-mapa2">
+        </div>
+        <div id="texto2">
+            <h3>CONHEÇA OS PAÍSES QUE MAIS EMITEM CO2 PER CAPITA</h3>
+            <p>Em 2019, a Índia ultrapassou a União Europeia (UE) no total anual de emissões de gases de efeito estufa
+                (GEE), tornando-se o terceiro maior emissor, depois da China e dos Estados Unidos. Mas essa estatística
+                conta apenas uma parte da história. A população da Índia é quase três vezes maior do que a estadunidense
+                – ou seja, tomando por base as emissões por pessoa, a Índia ocupa uma posição muito mais abaixo no
+                ranking dos países emissores.</p>
+            <p>Essa é apenas uma das muitas formas de comparar a responsabilidade de um país pelas mudanças climáticas.
+                Existem muitas outras dimensões relacionadas à equidade climática, como a vulnerabilidade ou capacidade
+                de agir de cada país. Em se tratando de emissões, é importante considerar a diferença entre as
+                populações e as contribuições históricas do país, além do total de emissões. É por isso que avaliar as
+                emissões de GEE de um país em relação à sua população – ou medir as emissões per capita – fornece uma
+                perspectiva útil.</p>
+            <p>A partir de dados do Climate Watch – uma plataforma online de dados abertos administrada pelo WRI, com
+                visualizações e análises sobre os avanços climáticos dos países –, fizemos uma comparação entre o
+                histórico e o cenário atual das emissões per capita dos países:</p>
+        </div>
+        <div id="imagem-mapa3">
+            <img src="img/grafico2.jpeg" id="imagem-mapa3">
+        </div>
+        <div id="texto3">
+            <p>As emissões per capita são uma resultante de fatores econômicos e tecnológicos e seu declínio, em geral,
+                é consequência da implementação de tecnologias de baixo carbono ou de uma crise econômica que diminui o
+                consumo de combustíveis fósseis.</p>
+            <p>No caso de EUA, União Europeia, Japão e outras economias avançadas, a redução das emissões per capita foi
+                possível a partir da implementação de tecnologias como energia solar e eólica e da transição de
+                combustíveis altamente emissores como o carbono para alternativas menos intensivas em carbono, como o
+                gás natural. Já a redução das emissões per capita da Rússia começou com a dissolução da União Soviética
+                e a diminuição da demanda por combustíveis fósseis por conta de uma economia em declínio.</p>
+            <p>No caso do Brasil, em contraste, a redução foi resultante do aumento da parcela de fontes renováveis na
+                matriz energética do país (principalmente a partir de usinas hidrelétricas e eólicas) e de uma
+                diminuição significativa das taxas de desmatamento, com a implementação de políticas para proteger a
+                Amazônia, um importante sumidouro de carbono.</p>
+            <h4 style="text-align: start; margin: 15vh; margin-top: 0; margin-bottom: 0; color: #CF4747;">MUITOS DOS
+                MAIORES EMISSORES
+                ESTÃO DESACELERANDO SUAS EMISSÕES PER CAPITA</h4>
+            <p>Em 2020, as emissões globais diminuíram 4,9% como resultado da pandemia de Covid-19, tornando-se a maior
+                queda de emissões desde 1960 (primeiro ano com dados disponíveis para esta fonte). Em 2021, no entanto,
+                as emissões voltaram a crescer rapidamente, atingindo um aumento de 0,1% em relação aos valores de 2019,
+                mostrando que as emissões ainda estão em tendência ascendente, ilustrando a necessidade de intensificar
+                as ações climáticas para ver uma dissociação entre crescimento econômico e emissões de carbono. Para
+                evitar os piores impactos das mudanças no clima, precisamos reduzir rapidamente as emissões e chegar a
+                emissões líquidas zero até 2050. Dados sobre o clima são essenciais para entender as últimas tendências
+                nas emissões e quais ações de curto e longo prazo dos países ajudarão a puxar a curva para baixo.</p>
+        </div>
+    </div>
+    <div id="calcule">
+        <h1 style="color: white; text-align: center; font-size: 50px;">CALCULE SUA <br> <span
+                style="color: #CF4747; font-size: 100px; font-family: Josefin Sans;">EMISSÃO</span> <br> DE CO2</h1>
+        <a href="formulario1.html"><button class="learn-more" style="margin-top: 2vh;">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Calcular</span>
+            </button></a>
+    </div>
+    <div id="anuncio">
+
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="img/valesus3.png" class="imagem-rod">
+                <p>Juntos, mudaremos o mundo.</p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/valesustentavel/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Conheça</h3>
+                </li>
+                <li>
+                    <a href="https://www.timoteo.mg.gov.br" class="footer-link">Prefeitura de Timóteo</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">ASCATI</a>
+                </li>
+                <li>
+                    <a href="https://brasil.un.org/pt-br/91863-agenda-2030-para-o-desenvolvimento-sustent%C3%A1vel" class="footer-link">Agenda 2030</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Explore</h3>
+                </li>
+                <li>
+                    <a href="sobre.html" class="footer-link">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="emissaoCO2.html" class="footer-link">Emissão de CO2</a>
+                </li>
+                <li>
+                    <a href="lixo.html" class="footer-link">Descarte de Lixo</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Acompanhe</h3>
+
+                <p>
+                    Coloque seu email para que você possa acompanhar tudo sobre a Agenda 2030.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserved
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+    <script src="sitets.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

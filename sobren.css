@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;0,700;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;0,700;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&family=Righteous&display=swap');
+
+main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    display: grid;
+    grid-template-areas: "objetivo"
+                         "logotipo"
+                         "nome";
+}
+
+#objetivo {
+    grid-area: objetivo;
+    background-color: #CF4747;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "ob-tit"
+                         "ob1"
+                         "ob2";
+    margin-bottom: 3vh solid #c74747;
+}
+
+#ob1 {
+    grid-area: ob1;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "ob1t";
+}
+
+#ob1t {
+    grid-area: ob1t;
+    background-color: #CF4747;
+    margin: 10px;
+}
+
+#ob1t h3 {
+    color: white;
+    font-family: Josefin Sans;
+    margin-top: 2vh;
+}
+
+#ob1t p {
+    color: white;
+    font-family: Josefin Sans;
+    text-align: justify;
+    margin-right: 15px;
+    font-size: 18px;  
+}
+
+.img-ods {
+    height: 25vh;
+    width: 25vh;
+    margin: 5px;
+    transition: 1.5s;
+}
+
+.img-ods:hover {
+    height: 30vh;
+    width: 30vh;
+    transition: 1.5s;
+    border: 5px solid white;
+    border-radius: 15%;
+}
+
+.img-lixo {
+    height: 40vh;
+    width: 80vh;
+    cursor: pointer;
+    border: 5px solid white;
+    margin-bottom: 2vh;
+}
+
+.img-timoteo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ods-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ob-tit {
+    grid-area: ob-tit;
+}
+
+#ob-tit h1 {
+    font-family: Josefin Sans;
+    margin-top: 5vh;
+}
+
+#logotipo {
+    grid-area: logotipo;
+    background-color: #171717;
+    display: grid;
+    grid-template-columns: 5fr 9fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imagem-logotipo texto-logotipo";
+}
+
+#imagem-logotipo {
+    grid-area: imagem-logotipo;
+    background-color: #171717;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15vh;
+}
+
+.logotipo {
+    height: 50vh;
+    width: 50vh;
+}
+
+#texto-logotipo {
+    grid-area: texto-logotipo;
+    background-color: #171717;
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+    margin-right: 15vh;
+}
+
+#texto-logotipo h1 {
+    color: white;
+    font-family: Josefin Sans;
+    margin-top: 2vh;
+}
+
+#texto-logotipo p {
+    color: white;
+    font-family: Josefin Sans;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+#nome {
+    grid-area: nome;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nome1"
+                         "motivo";
+    margin-bottom: 5vh;
+}
+
+#nome1 {
+    grid-area: nome1;
+    background-color: #ffffff;
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+
+#nome1 h1 {
+    color: black;
+    font-family: Josefin Sans;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+#nome1 p {
+    color: black;
+    font-family: Josefin Sans;
+    text-align: justify;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    font-size: 18px;
+}
+
+#motivo {
+    grid-area: motivo;
+    background-color: #ffffff;
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+
+#motivo h3 {
+    color: black;
+    font-family: Josefin Sans;
+    margin-left: 15vh;
+}
+
+#motivo p {
+    color: black;
+    font-family: Josefin Sans;
+    text-align: justify;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    font-size: 18px;
+}
+
+.imagem-cab {
+    height:  50px;
+    width: 230px;
+}
+
+.imagem-rod {
+    height: 50px;
+    width: 250px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
+    height: 10vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 3vh;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: #cf4747;
+    transition: 1s;
+}
+
+
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open {
+        display: block;
+    }
+
+    #carrossel {
+        grid-area: carrossel;
+        background: url(imagem6.webp) no-repeat fixed;
+        background-size: 100vw 40vh;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #corpo {
+        grid-area: corpo;
+        background-color: #CF4747;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30vh auto 30vh auto 130vh auto; 
+        grid-template-areas: "carrossel"
+                             "sobre"
+                             "subtit"
+                             "sobre2"
+                             "agenda2030"
+                             "ods";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+#footer_contacts p {
+    margin-left: 2vw;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 2vw;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 820px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    #texto2 {
+        margin: 5vh;
+        margin-right: 5vh;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+
+    #sobre {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "texto";
+    }    
+
+    #imge {
+        display: none;
+    }
+
+    #texto2 h3 {
+        margin-top: 20vh;
+    }
+}
